@@ -1,1 +1,23 @@
-// TODO
+@use "util" as *;
+.postInfo {
+    margin-top: rem(24);
+    display: flex;
+
+    div {
+        color: var(--info);
+        font-size: rem(14);
+        display: inherit;
+        align-items: center;
+    
+        & + div {
+            margin-left: rem(24);
+        }
+
+        svg {
+            margin-right: rem(8);
+            width: rem(20);
+            height: rem(20);
+        }
+        
+    }
+}
